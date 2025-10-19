@@ -1,0 +1,31 @@
+{
+  "name": "underground-ascent",
+  "version": "0.1.0",
+  "description": "A permadeath platformer where you escape from underground chambers to reach the surface",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "cd public && python3 -m http.server 8000",
+    "serve": "cd public && npx serve -s . -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/underground-ascent.git"
+  },
+  "keywords": [
+    "game",
+    "platformer",
+    "javascript",
+    "html5",
+    "permadeath",
+    "procedural",
+    "pixel-art"
+  ],
+  "author": "Gabe",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

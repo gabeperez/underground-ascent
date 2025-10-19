@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <canvas id="game" width="320" height="180" style="border: 1px solid white; background: black;"></canvas>
+    
+    <script type="module">
+        console.log('Test script loading...');
+        
+        try {
+            const canvas = document.getElementById('game');
+            const ctx = canvas.getContext('2d');
+            
+            // Draw a simple test
+            ctx.fillStyle = '#ff0000';
+            ctx.fillRect(10, 10, 50, 50);
+            
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '16px monospace';
+            ctx.fillText('TEST', 80, 30);
+            
+            console.log('Canvas test successful');
+            
+            // Test module import
+            import('./src/core/prng.js').then(module => {
+                console.log('Module import successful:', module);
+                const { createRandom } = module;
+                const rng = createRandom(12345);
+                console.log('Random test:', rng.next());
+            }).catch(err => {
+                console.error('Module import failed:', err);
+            });
+            
+        } catch (error) {
+            console.error('Test failed:', error);
+        }
+    </script>
+</body>
+</html>
