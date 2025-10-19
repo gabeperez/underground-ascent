@@ -24,7 +24,7 @@ All art assets remain under their original license terms.
 
 ## Play Online
 
-🎮 **Live Demo**: https://USERNAME.github.io/underground-ascent (after GitHub setup)
+🎮 **Live Demo**: https://gabeperez.github.io/underground-ascent (deploying...)
 
 ## Local Development
 
@@ -32,7 +32,7 @@ All art assets remain under their original license terms.
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/USERNAME/underground-ascent.git
+   git clone https://github.com/gabeperez/underground-ascent.git
    cd underground-ascent
    ```
 
